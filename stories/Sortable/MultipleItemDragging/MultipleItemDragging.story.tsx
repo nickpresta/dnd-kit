@@ -22,20 +22,9 @@ import {
   SortingStrategy,
 } from '@dnd-kit/sortable';
 
-import {
-  Item,
-  List,
-  GridContainer,
-  Button,
-  FloatingControls,
-  PlayingCard,
-  getDeckOfCards,
-  shuffle,
-} from '../../components';
+import {Item, List, GridContainer} from '../../components';
 
 import {createRange} from '../../utilities';
-
-import styles from './MultipleItemDragging.module.css';
 
 export default {
   title: 'Presets|Sortable/Multiple Item Dragging',
