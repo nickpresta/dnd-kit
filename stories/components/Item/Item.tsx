@@ -10,6 +10,7 @@ import styles from './Item.module.css';
 export interface Props {
   clone?: boolean;
   disabled?: boolean;
+  selected?: boolean;
   dragging?: boolean;
   handle?: boolean;
   height?: number;
@@ -42,6 +43,7 @@ export const Item = React.memo(
         clone,
         dragging,
         disabled,
+        selected,
         fadeIn,
         handle,
         height,
@@ -116,7 +118,8 @@ export const Item = React.memo(
               dragging && styles.dragging,
               handle && styles.withHandle,
               clone && styles.clone,
-              disabled && styles.disabled
+              disabled && styles.disabled,
+              selected && styles.selected
             )}
             tabIndex={!handle ? 1 : undefined}
             style={style}

@@ -7,6 +7,7 @@ $box-shadow-border: 0 0 0 calc(1px / var(--scale-x, 1)) rgba(63, 63, 68, 0.05);
 $box-shadow-common: 0 1px calc(3px / var(--scale-x, 1)) 0 rgba(34, 33, 81, 0.15);
 $box-shadow: $box-shadow-border, $box-shadow-common;
 $focused-outline-color: #4c9ffe;
+$selected-icon-color: #AAA;
 
 @keyframes pop {
   0% {
@@ -85,6 +86,24 @@ $focused-outline-color: #4c9ffe;
 
   &:focus {
     box-shadow: 0 0px 4px 1px $focused-outline-color, $box-shadow;
+  }
+
+  &.selected:before {
+    content: '\2713';
+    color: $selected-icon-color;
+    border: 2px solid $selected-icon-color;
+    border-radius: 100%;
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    top: 6px;
+    right: 6px;
   }
 
   &:not(.withHandle) {
