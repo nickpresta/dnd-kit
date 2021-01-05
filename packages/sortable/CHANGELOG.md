@@ -1,5 +1,11 @@
 # @dnd-kit/sortable
 
+## 1.0.1
+
+### Patch Changes
+
+- [`78a7b67`](https://github.com/clauderic/dnd-kit/commit/78a7b672e856c911e7cfdd4ec8f6e4d0e7c36531) Thanks [@clauderic](https://github.com/clauderic)! - Fix an issue with the sortable keyboard coordinate getter not excluding disabled droppables.
+
 ## 1.0.0
 
 ### Major Changes
